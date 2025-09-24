@@ -19,6 +19,24 @@ namespace Inheritence
             Movement = "flies";
         }
 
+        public void LayEgg()
+        {
+            Console.WriteLine("The bird has laid an egg!");
+        }
+
+    }
+    internal class Chicken : BirdClass
+    {
+        public Chicken()
+        {
+            Color = "white";
+            Food = "grains";
+            Movement = "walks and flaps its wings";
+        }
+        public void Peck()
+        {
+            Console.WriteLine("The chicken pecks the ground.");
+        }
     }
     internal class Flamingo : BirdClass
     {
@@ -26,7 +44,11 @@ namespace Inheritence
         {
             Color = "pink";
             Food = "crustasceans";          
-            Movement = "stands on one leg";
         }
+        public void StandOnOneLeg()
+        {
+            Console.WriteLine("The flamingo is standing on one leg.");
+        }
+
     }
 }

@@ -22,6 +22,15 @@
             bird1.Eat();
             bird1.MakeSound();
             bird1.Move();
+            bird1.LayEgg();
+
+            Chicken chicken1 = new();
+            chicken1.Peck();
+            
+            Flamingo flamingo = new();
+            flamingo.StandOnOneLeg();
+
+
 
             Horse horse1 = new();
             Console.WriteLine($"This animal has skintype: {horse1.SkinType} is color: {horse1.Color} and has {horse1.Food} as it's favourite food.");
@@ -35,7 +44,20 @@
             flamingo1.MakeSound();
             flamingo1.Move();
 
+            // Created a new animal object pig 
+            /*Animal pig = new();
+            pig.Color = "pink";
+            pig.Food = "corn";
+            pig.Sound = "oinks";
+            Console.WriteLine($"This animal has skintype: {pig.SkinType} is color: {pig.Color} and has {pig.Food} as it's favourite food.");
+            pig.Eat();
+            pig.MakeSound();*/
+
             Console.WriteLine($"Total animals in the zoo: {Animal.AnimalCount}");
+
+
+            // foreach (Animal animal in animal) make a loop to handle each created object animal 
+    
         }
     }
 }
