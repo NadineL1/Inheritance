@@ -18,7 +18,6 @@ namespace Inheritence
             Pattern = "varied";
             Movement = "flies";
         }
-
         public void LayEgg()
         {
             Console.WriteLine("The bird has laid an egg!");
@@ -49,6 +48,16 @@ namespace Inheritence
         {
             Console.WriteLine("The flamingo is standing on one leg.");
         }
-
+    }
+    internal class  Owl : BirdClass
+    {
+        public bool IsNocturnal { get; set; }
+        public Owl()
+        {
+            Color = "brown";
+            Food = "mice";
+            Sound = "hoots";
+            IsNocturnal = true;
+        }
     }
 }

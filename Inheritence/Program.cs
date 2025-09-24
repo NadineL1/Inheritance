@@ -55,6 +55,9 @@
             Zebra zebra1 = new();
             zebra1.Eat();
 
+            Donkey donkey1 = new();
+            donkey1.Kick();
+
             Console.WriteLine($"Total animals in the zoo: {Animal.AnimalCount}");
 
 
