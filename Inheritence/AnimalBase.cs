@@ -9,6 +9,8 @@ namespace Inheritence
     internal class Animal
     {
         // Base class method
+        // static field to count each animal created
+        public static int AnimalCount = 0;
 
         // fields/properties
         public string Color { get; set; }
@@ -29,6 +31,7 @@ namespace Inheritence
             Sound = "speaks";
             Pattern = "plain";
             Movement = "walks";
+            AnimalCount++;
         }
 
         // methods for animal class
