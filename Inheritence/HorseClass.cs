@@ -19,4 +19,19 @@ namespace Inheritence
             Movement = "gallops";
         }
     }
+    internal class Zebra : Horse
+    {
+
+        public Zebra()
+        { 
+            Color = "black and white";
+            Food = "grass";
+            Pattern = "striped";
+            Sound = "barks";
+        }
+        public override void Eat()
+        { 
+            Console.WriteLine($"This animal eats {Food} in the Savannah.");
+        }
+    }
 }

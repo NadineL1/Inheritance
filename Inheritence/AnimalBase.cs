@@ -35,7 +35,7 @@ namespace Inheritence
         }
 
         // methods for animal class
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine($"This animal eats {Food}");
         }

@@ -52,6 +52,8 @@
             Console.WriteLine($"This animal has skintype: {pig.SkinType} is color: {pig.Color} and has {pig.Food} as it's favourite food.");
             pig.Eat();
             pig.MakeSound();*/
+            Zebra zebra1 = new();
+            zebra1.Eat();
 
             Console.WriteLine($"Total animals in the zoo: {Animal.AnimalCount}");
 
