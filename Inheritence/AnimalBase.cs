@@ -3,7 +3,7 @@
 
 namespace Inheritence
 {
-    internal class Animal
+    internal class Animal 
     {
         // Base class method
         // static field to count each animal created
@@ -47,6 +47,9 @@ namespace Inheritence
         {
             Console.WriteLine($"This animal {Movement}");
         }
-
+        public void ProCreate()
+        {
+            Console.WriteLine("A new life has been created! A lovely {} has been born!");
+        }
     }
 }
