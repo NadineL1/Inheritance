@@ -10,10 +10,10 @@ namespace Inheritence
     {
         public Horse()
         {
-            Color = "Tan";
+            Color = "tan";
             Food = "hay";
             hasWings = false;
-            SkinType = "Fur";
+            SkinType = "fur";
             Sound = "neighs";
             Pattern = "plain";
             Movement = "gallops";

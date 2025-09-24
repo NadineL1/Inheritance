@@ -24,10 +24,10 @@ namespace Inheritence
         // constructor for animal class
         public Animal()
         { 
-            Color = "Brown";
+            Color = "brown";
             Food = "food";
             hasWings = false;
-            SkinType = "Skin";
+            SkinType = "skin";
             Sound = "speaks";
             Pattern = "plain";
             Movement = "walks";
@@ -39,7 +39,7 @@ namespace Inheritence
         {
             Console.WriteLine($"This animal eats {Food}");
         }
-        public void Speak()
+        public void MakeSound()
         {
             Console.WriteLine($"This animal {Sound}");
         }

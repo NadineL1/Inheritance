@@ -11,13 +11,13 @@ namespace Inheritence
         // constructor for catclass
         public Cat()
         {
-            Color = "Black";
+            Color = "black";
             Food = "fish";
             hasWings = false;
-            SkinType = "Fur";
-            Sound = "Meows";
+            SkinType = "fur";
+            Sound = "meows";
             Pattern = "plain";
-            Movement = "Climbs";
+            Movement = "climbs";
         }
 
     }

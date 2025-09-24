@@ -10,10 +10,10 @@ namespace Inheritence
     {
         public BirdClass()
         {
-            Color = "Yellow";
+            Color = "yellow";
             Food = "seeds";
             hasWings = true;
-            SkinType = "Feathers";
+            SkinType = "feathers";
             Sound = "chirps";
             Pattern = "varied";
             Movement = "flies";
@@ -24,7 +24,7 @@ namespace Inheritence
     {
         public Flamingo()
         {
-            Color = "Pink";
+            Color = "pink";
             Food = "crustasceans";          
             Movement = "stands on one leg";
         }
