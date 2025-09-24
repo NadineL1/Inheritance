@@ -15,6 +15,8 @@ namespace Inheritence
         // fields/properties
         public string Color { get; set; }
         public string Food { get; set; }
+
+        public string gender { get; set; }
         public bool hasWings { get; set; }
         public string SkinType { get; set; }
         public string Sound { get; set; }
