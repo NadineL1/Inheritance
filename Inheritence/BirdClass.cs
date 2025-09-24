@@ -20,4 +20,13 @@ namespace Inheritence
         }
 
     }
+    internal class Flamingo : BirdClass
+    {
+        public Flamingo()
+        {
+            Color = "Pink";
+            Food = "crustasceans";          
+            Movement = "stands on one leg";
+        }
+    }
 }

@@ -29,6 +29,12 @@
             horse1.Speak();
             horse1.Move();
 
+            Flamingo flamingo1 = new();
+            Console.WriteLine($"This animal has skintype: {flamingo1.SkinType} is color: {flamingo1.Color} and has {flamingo1.Food} as it's favourite food.");
+            flamingo1.Eat();
+            flamingo1.Speak();
+            flamingo1.Move();
+
             Console.WriteLine($"Total animals in the zoo: {Animal.AnimalCount}");
         }
     }
