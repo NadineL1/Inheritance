@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Inheritence
 {
@@ -12,17 +8,17 @@ namespace Inheritence
         {
             Color = "yellow";
             Food = "seeds";
-            hasWings = true;
+            Gender = " ";
+            HasWings = true;
+            Movement = "flies";
+            Pattern = "varied";
             SkinType = "feathers";
             Sound = "chirps";
-            Pattern = "varied";
-            Movement = "flies";
         }
         public void LayEgg()
         {
             Console.WriteLine("The bird has laid an egg!");
         }
-
     }
     internal class Chicken : BirdClass
     {
@@ -56,8 +52,12 @@ namespace Inheritence
         {
             Color = "brown";
             Food = "mice";
-            Sound = "hoots";
             IsNocturnal = true;
+            Sound = "hoots";
+        }
+        public void Hunting()
+        {
+            Console.WriteLine("The owl is hunting for it's prey.");
         }
     }
 }

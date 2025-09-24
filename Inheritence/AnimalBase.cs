@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Inheritence
 {
@@ -12,27 +9,28 @@ namespace Inheritence
         // static field to count each animal created
         public static int AnimalCount = 0;
 
-        // fields/properties
+        // fields/properties for animal class
         public string Color { get; set; }
         public string Food { get; set; }
-
-        public string gender { get; set; }
-        public bool hasWings { get; set; }
+        public string Gender { get; set; }
+        public bool HasWings { get; set; }
+        public string Movement { get; set; }
+        public string Pattern { get; set; }
         public string SkinType { get; set; }
         public string Sound { get; set; }
-        public string Pattern { get; set; }
-        public string Movement { get; set; }
 
         // constructor for animal class
         public Animal()
         { 
             Color = "brown";
             Food = "food";
-            hasWings = false;
+            Gender = "Male";
+            HasWings = false;
+            Movement = "walks";
+            Pattern = "plain";
             SkinType = "skin";
             Sound = "speaks";
-            Pattern = "plain";
-            Movement = "walks";
+            
             AnimalCount++;
         }
 

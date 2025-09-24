@@ -1,22 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
 
 namespace Inheritence
 {
     internal class Cat : Animal
     {
-        bool isHuntingSuccessful;
+        bool isHuntingSuccessful { get; set; }
         // constructor for catclass
         public Cat()
         {
             Color = "black";
             Food = "fish";
-            hasWings = false;
+            HasWings = false;
             SkinType = "thick fur";
             Sound = "meows";
             Pattern = "plain";
@@ -55,7 +49,7 @@ namespace Inheritence
             Movement = "prowls";
             Food = "meat";
             Sound = "roars";
-            if (gender == "female")
+            if (Gender == "female")
             {
                 HasMane = false;
             }

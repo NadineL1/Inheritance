@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Inheritence
 {
@@ -12,7 +8,7 @@ namespace Inheritence
         {
             Color = "tan";
             Food = "hay";
-            hasWings = false;
+            HasWings = false;
             SkinType = "fur";
             Sound = "neighs";
             Pattern = "plain";
