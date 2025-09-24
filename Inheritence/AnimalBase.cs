@@ -17,6 +17,7 @@ namespace Inheritence
         public string SkinType { get; set; }
         public string Sound { get; set; }
         public string Pattern { get; set; }
+        public string Movement { get; set; }
 
         // constructor for animal class
         public Animal()
@@ -27,6 +28,7 @@ namespace Inheritence
             SkinType = "Skin";
             Sound = "speaks";
             Pattern = "plain";
+            Movement = "walks";
         }
 
         // methods for animal class
@@ -40,7 +42,7 @@ namespace Inheritence
         }
         public void Move()
         {
-            Console.WriteLine("This animal moves");
+            Console.WriteLine($"This animal {Movement}");
         }
 
     }
