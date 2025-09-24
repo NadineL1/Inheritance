@@ -19,9 +19,21 @@ namespace Inheritence
             Movement = "gallops";
         }
     }
+    internal class Donkey : Horse
+    {
+        public Donkey()
+        { 
+            Color = "gray";
+            Sound = "brays";
+            Movement = "strut";
+        }
+        public void Kick()
+        {
+            Console.WriteLine("Watch out! The donkey is kicking!!");
+        }
+    }
     internal class Zebra : Horse
     {
-
         public Zebra()
         { 
             Color = "black and white";
