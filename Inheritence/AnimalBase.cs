@@ -47,9 +47,10 @@ namespace Inheritence
         {
             Console.WriteLine($"This animal {Movement}");
         }
+        // using GetType method i can get the object name of each object using this method
         public void ProCreate()
         {
-            Console.WriteLine("A new life has been created! A lovely {} has been born!");
+            Console.WriteLine($"A new life has been created! A lovely {GetType().Name} has been born!");
         }
     }
 }
