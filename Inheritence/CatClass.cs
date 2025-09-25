@@ -59,15 +59,20 @@ namespace Inheritence
             }
         }
         // method specific to lion class
-
+        public void Territory()
+        {
+            Console.WriteLine("The lions are protecting their territory!");
+        }
     }
     internal class Tiger : Cat
     {
-       public Tiger()
+         public bool IsSolitary { get; set; }
+         public Tiger()
        { 
             Color = "orange and black";
-            Pattern = "striped";
             Food = "deer meat";
+            IsSolitary = true;
+            Pattern = "striped";
         }
         //method specific to tiger class
         public void Swim()
@@ -77,11 +82,13 @@ namespace Inheritence
     }
     internal class Panther : Cat
     {
+        public int NumberOfLegs;
         public Panther()
         {
             Color = "black as the night";
             Food = "wild hogs";
             Movement = "stalks";
+            NumberOfLegs = 4;
         }
         override public void Eat()
         {
