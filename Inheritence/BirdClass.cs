@@ -4,16 +4,21 @@ namespace Inheritence
 {
     internal class BirdClass : Animal
     {
+        public string Dancing { get; set; }
         public BirdClass()
         {
             Color = "yellow";
+            Dancing = "mating dance";
             Food = "seeds";
-            Gender = " ";
             HasWings = true;
             Movement = "flies";
             Pattern = "varied";
             SkinType = "feathers";
             Sound = "chirps";
+        }
+        public void Dance()
+        {
+            Console.WriteLine($"The birds are doing a {Dancing}.");
         }
         public void LayEgg()
         {
@@ -22,8 +27,10 @@ namespace Inheritence
     }
     internal class Chicken : BirdClass
     {
+        public bool CanBePeopleFood { get; set; }
         public Chicken()
         {
+            CanBePeopleFood = true;
             Color = "white";
             Food = "grains";
             Movement = "walks and flaps its wings";
@@ -35,10 +42,12 @@ namespace Inheritence
     }
     internal class Flamingo : BirdClass
     {
+        public bool MateForLife {  get; set; }
         public Flamingo()
         {
             Color = "pink";
-            Food = "crustasceans";          
+            Food = "crustasceans";
+            MateForLife = true;
         }
         public void StandOnOneLeg()
         {
