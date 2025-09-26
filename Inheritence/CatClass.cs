@@ -25,7 +25,7 @@ namespace Inheritence
         {
             Console.WriteLine($"The cat is hunting for {Food}");
             Random rand = new Random();
-            int huntOutcome = rand.Next(0, 2); // generates a number between 0 and 1
+            int huntOutcome = rand.Next(0, 2); // generates a number between 0 and 1 to create a random hunt outcome
             if (huntOutcome == 0)
             {
                 isHuntingSuccessful = false;
@@ -64,8 +64,10 @@ namespace Inheritence
             Console.WriteLine("The lions are protecting their territory!");
         }
     }
+    // tiger subclass
     internal class Tiger : Cat
     {
+        // tiger specific 
          public bool IsSolitary { get; set; }
          public Tiger()
        { 
@@ -82,7 +84,9 @@ namespace Inheritence
     }
     internal class Panther : Cat
     {
-        public int NumberOfLegs;
+        // property specific for panther, creativity level is done here.. 
+        public int NumberOfLegs { get; set; }
+        // constructor of panther class
         public Panther()
         {
             Color = "black as the night";
@@ -90,6 +94,7 @@ namespace Inheritence
             Movement = "stalks";
             NumberOfLegs = 4;
         }
+        // method overriding main method in Animal base
         override public void Eat()
         {
             Console.WriteLine($"The panther eats {Food} in the jungle.");
