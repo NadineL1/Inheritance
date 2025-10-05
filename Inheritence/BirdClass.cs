@@ -82,7 +82,7 @@ namespace Inheritence
             Movement = "turns its head 360 degrees.";
             Sound = "hoots";
         }
-        // method for Owl
+        // method for Owl, huntinh with random outcome
         public bool Hunting()
         {
             Console.WriteLine($"The owl is hunting for it's prey, a {Food}.");
