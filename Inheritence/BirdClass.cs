@@ -42,6 +42,7 @@ namespace Inheritence
             Color = "white";
             Food = "grains";
             Movement = "walks and flaps its wings";
+            Sound = "bocks";
         }
         // method for chicken class
         public void Peck()

@@ -75,6 +75,7 @@ namespace Inheritence
             Food = "deer meat";
             IsSolitary = true;
             Pattern = "striped";
+            Sound = "ROARS";
         }
         //method specific to tiger class
         public void Swim()

@@ -38,15 +38,15 @@ namespace Inheritence
         // using GetType method i can get the object name of each object using this method
         public virtual void Eat()
         {
-            Console.WriteLine($"The {GetType().Name} eats {Food}");
+            Console.WriteLine($"The {GetType().Name} eats {Food}.");
         }
         public virtual void MakeSound()
         {
-            Console.WriteLine($"This {GetType().Name} {Sound}");
+            Console.WriteLine($"This {GetType().Name} {Sound}.");
         }
         public void Move()
         {
-            Console.WriteLine($"This {GetType().Name} {Movement}");
+            Console.WriteLine($"This {GetType().Name} {Movement}.");
         }
         public void ProCreate()
         {
