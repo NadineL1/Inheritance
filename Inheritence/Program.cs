@@ -16,8 +16,6 @@
             zebra.ProCreate();
 
             Console.WriteLine($"Total animals in the zoo: {Animal.AnimalCount}");
-            
-            // foreach (Animal animal in animal) make a loop to handle each created object animal 
     
         }
     }
