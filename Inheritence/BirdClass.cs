@@ -57,6 +57,7 @@ namespace Inheritence
     internal class  Owl : BirdClass
     {
         public bool IsNocturnal { get; set; }
+        public bool SucessfulHunt { get; set; }
         public Owl()
         {
             Color = "brown";
@@ -65,9 +66,22 @@ namespace Inheritence
             Movement = "turns its head 360 degrees.";
             Sound = "hoots";
         }
-        public void Hunting()
+        public bool Hunting()
         {
-            Console.WriteLine("The owl is hunting for it's prey.");
+            Console.WriteLine($"The owl is hunting for it's prey, a {Food}.");
+            Random rand = new Random();
+            int huntOutcome = rand.Next(0, 2); // generates a number between 0 and 1 to create a random hunt outcome
+            if (huntOutcome == 0)
+            {
+                SucessfulHunt = false;
+                Console.WriteLine($"The hunt was unsuccessful, the {GetType().Name} got its {Food}");
+            }
+            else
+            {
+                SucessfulHunt = true;
+                Console.WriteLine("The hunt was successful!");
+            }
+            return SucessfulHunt;
         }
     }
 }
