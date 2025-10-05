@@ -17,6 +17,10 @@
             zebra.ProCreate();
             zebra.MakeSound();
 
+            Human human1 = new("Andreas", 30);
+            human1.MakeSound();
+            human1.HumanInfo();
+
             Console.WriteLine($"Total animals in the zoo: {Animal.AnimalCount}");
     
         }

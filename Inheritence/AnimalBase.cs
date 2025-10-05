@@ -40,7 +40,7 @@ namespace Inheritence
         {
             Console.WriteLine($"The {GetType().Name} eats {Food}");
         }
-        public void MakeSound()
+        public virtual void MakeSound()
         {
             Console.WriteLine($"This {GetType().Name} {Sound}");
         }
