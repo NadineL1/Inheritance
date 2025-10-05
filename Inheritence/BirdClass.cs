@@ -37,7 +37,7 @@ namespace Inheritence
         }
         public void Peck()
         {
-            Console.WriteLine("The chicken pecks the ground.");
+            Console.WriteLine($"The chicken pecks for {Food} the ground.");
         }
     }
     internal class Flamingo : BirdClass
@@ -62,6 +62,7 @@ namespace Inheritence
             Color = "brown";
             Food = "mice";
             IsNocturnal = true;
+            Movement = "turns its head 360 degrees.";
             Sound = "hoots";
         }
         public void Hunting()

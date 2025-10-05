@@ -7,7 +7,7 @@ namespace Inheritence
         // Horse specific property
         public bool IsUsedAsVechicle { get; set; }
 
-        // horse construktor with gorse class default values
+        // horse constructor with gorse class default values
         public Horse()
         {
             Color = "tan";

@@ -35,22 +35,23 @@ namespace Inheritence
         }
 
         // methods for animal class
+        // using GetType method i can get the object name of each object using this method
         public virtual void Eat()
         {
-            Console.WriteLine($"This animal eats {Food}");
+            Console.WriteLine($"The {GetType().Name} eats {Food}");
         }
         public void MakeSound()
         {
-            Console.WriteLine($"This animal {Sound}");
+            Console.WriteLine($"This {GetType().Name} {Sound}");
         }
         public void Move()
         {
-            Console.WriteLine($"This animal {Movement}");
+            Console.WriteLine($"This {GetType().Name} {Movement}");
         }
-        // using GetType method i can get the object name of each object using this method
         public void ProCreate()
         {
             Console.WriteLine($"A new life has been created! A lovely {GetType().Name} has been born!");
+            Animal animal = new ();
         }
     }
 }
