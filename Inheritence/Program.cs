@@ -4,6 +4,7 @@
     {
         static void Main()
         {
+            // creating new objects and using a few methods 
             Animal animal1 = new();
             animal1.MakeSound();
 
@@ -45,7 +46,7 @@
             donkey1.MakeSound();
             donkey1.Kick();
 
-            
+            // printing number of animals in console
             Console.WriteLine($"Total animals in the zoo: {Animal.AnimalCount}");
     
         }
