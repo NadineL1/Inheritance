@@ -3,12 +3,12 @@
 namespace Inheritence
 {
     // subclass for birds, inheriting from animal
-    internal class BirdClass : Animal
+    internal class Bird : Animal
     {
         // new property for birdclass
         public string Dancing { get; set; }
         // constructor for birdclass with set defaut values
-        public BirdClass()
+        public Bird()
         {
             Color = "yellow";
             Dancing = "mating dance";
@@ -30,7 +30,7 @@ namespace Inheritence
         }
     }
     // subclass Chicken
-    internal class Chicken : BirdClass
+    internal class Chicken : Bird
     {
         // property for chicken class
         public bool CanBePeopleFood { get; set; }
@@ -51,7 +51,7 @@ namespace Inheritence
         }
     }
     // subclass flamingo
-    internal class Flamingo : BirdClass
+    internal class Flamingo : Bird
     {
         // property for Flamingo
         public bool MateForLife {  get; set; }
@@ -69,7 +69,7 @@ namespace Inheritence
         }
     }
     // subclass Owl
-    internal class  Owl : BirdClass
+    internal class  Owl : Bird
     {
         // properties for subclass owl
         public bool IsNocturnal { get; set; }
@@ -86,7 +86,7 @@ namespace Inheritence
         // method for Owl, huntinh with random outcome
         public bool Hunting()
         {
-            Console.WriteLine($"The owl is hunting for it's prey, a {Food}.");
+            Console.WriteLine($"The owl is hunting for it's prey, its favorite food is {Food}.");
             Random rand = new Random();
             int huntOutcome = rand.Next(0, 2); // generates a number between 0 and 1 to create a random hunt outcome
             if (huntOutcome == 0)

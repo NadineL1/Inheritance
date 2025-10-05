@@ -7,7 +7,7 @@
             Animal animal1 = new();
             animal1.MakeSound();
 
-            BirdClass bird1 = new();
+            Bird bird1 = new();
             bird1.MakeSound();
             bird1.Dance();
 

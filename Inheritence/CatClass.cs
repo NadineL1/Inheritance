@@ -23,18 +23,18 @@ namespace Inheritence
         }
         public bool Hunt()
         {
-            Console.WriteLine($"The cat is hunting for {Food}");
+            Console.WriteLine($"The cat is hunting for {Food}.");
             Random rand = new Random();
             int huntOutcome = rand.Next(0, 2); // generates a number between 0 and 1 to create a random hunt outcome
             if (huntOutcome == 0)
             {
                 isHuntingSuccessful = false;
-                Console.WriteLine("The hunt was unsuccessful.");
+                Console.WriteLine("The hunt was unsuccessful, he will go to sleep hungry.");
             }
             else
             {
                 isHuntingSuccessful = true;
-                Console.WriteLine("The hunt was successful!");
+                Console.WriteLine($"The hunt was successful! The {Food}had it coming!");
             }
             return isHuntingSuccessful;
         }

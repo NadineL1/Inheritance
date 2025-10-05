@@ -30,7 +30,7 @@ namespace Inheritence
             Pattern = "plain";
             SkinType = "skin";
             Sound = "speaks";
-            
+            // adds to animal count each time an animal is created
             AnimalCount++;
         }
 
